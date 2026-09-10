@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lenz Auto Peças</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<a
+    href="https://wa.me/555399310172?text=Olá!%20Quero%20fazer%20um%20pedido%20na%20Lenz%20Auto%20Peças."
+    class="whatsapp-flutuante"
+    target="_blank">
+    💬
+</a>
+
+<div id="modal-detalhes" class="modal-detalhes">
+    <div class="modal-conteudo">
+        <button class="fechar-modal" type="button">&times;</button>
+
+        <h2 id="modal-nome"></h2>
+
+        <p>
+            Consulte informações sobre aplicação,
+            disponibilidade e preço desta peça.
+        </p>
+
+        <a
+            id="modal-whatsapp"
+            class="whatsapp"
+            target="_blank">
+            💬 Consultar pelo WhatsApp
+        </a>
+    </div>
+</div>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="logo">
+            LENZ <span>AUTO PEÇAS</span>
+        </div>
+
+<button class="menu-mobile" onclick="document.querySelector('nav').classList.toggle('ativo')">
+    ☰
+</button>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <a href="#carrinho" class="botao-carrinho">
+    🛒 Carrinho
+    <span id="contador-carrinho">0</span>
+</a>
+
+    </header>
+
+
+    <!-- BANNER -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-text">
+
+            <h1>Peças para o seu carro</h1>
+
+            <p>
+                Encontre as peças que você precisa
+                e faça seu pedido pelo WhatsApp.
+            </p>
+
+            <a href="#produtos" class="botao">
+                Ver produtos
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- BENEFÍCIOS -->
+
+<section class="beneficios">
+
+    <div class="beneficio">
+        <span>🚚</span>
+        <div>
+            <h3>Entrega rápida</h3>
+            <p>Agilidade no seu pedido</p>
+        </div>
+    </div>
+
+    <div class="beneficio">
+        <span>🔧</span>
+        <div>
+            <h3>Peças de qualidade</h3>
+            <p>Produtos selecionados</p>
+        </div>
+    </div>
+
+    <div class="beneficio">
+        <span>💬</span>
+        <div>
+            <h3>Atendimento</h3>
+            <p>Fale conosco pelo WhatsApp</p>
+        </div>
+    </div>
+
+    <div class="beneficio">
+        <span>🔒</span>
+        <div>
+            <h3>Compra segura</h3>
+            <p>Atendimento confiável</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- CATEGORIAS -->
+
+<section class="categorias">
+
+    <h2>Encontre a peça que você precisa</h2>
+
+    <div class="lista-categorias">
+
+        <a href="#produtos" class="categoria">
+            <span>🛑</span>
+            <h3>Freios</h3>
+            <p>Pastilhas e discos</p>
+        </a>
+
+        <a href="#produtos" class="categoria">
+            <span>🛢️</span>
+            <h3>Filtros</h3>
+            <p>Óleo, ar e combustível</p>
+        </a>
+
+        <a href="#produtos" class="categoria">
+            <span>🔧</span>
+            <h3>Suspensão</h3>
+            <p>Amortecedores e peças</p>
+        </a>
+
+        <a href="#produtos" class="categoria">
+            <span>⚙️</span>
+            <h3>Motor</h3>
+            <p>Peças para manutenção</p>
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- PRODUTOS -->
+<section class="produtos" id="produtos">
+
+    <h2>Produtos em destaque</h2>
+
+    <div class="busca-produtos">
+    <input
+        type="text"
+        id="busca"
+        placeholder="🔎 Buscar peça ou produto..."
+    >
+</div>
+
+    <div class="lista-produtos">
+
+
+        <!-- PRODUTO 1 -->
+        <div class="produto">
+
+            <div class="imagem-produto">
+                <img src="imagens/produto1.jpg" alt="Pastilha de Freio">
+            </div>
+
+            <h3>Pastilha de Freio</h3>
+
+            <p class="descricao-produto">
+                Peça de qualidade para manutenção do sistema de freio.
+            </p>
+
+            <p class="compatibilidade">
+    🚗 Compatível com: Chevrolet, Fiat e Volkswagen
+</p>
+
+            <p class="disponivel">
+                ● Disponível
+            </p>
+
+            <p class="preco">
+    R$ 30,90
+</p>
+
+<button class="btn-detalhes" type="button">
+    Ver detalhes
+</button>
+
+<button class="btn-carrinho" type="button">
+    Adicionar ao carrinho
+</button>
+
+</div>
+
+
+        <!-- PRODUTO 2 -->
+        <div class="produto">
+
+            <div class="imagem-produto">
+                <img src="imagens/produto2.jpg" alt="Filtro de Óleo">
+            </div>
+
+            <h3>Filtro de Óleo</h3>
+
+            <p class="descricao-produto">
+                Ajuda a manter o óleo do motor limpo e protegido.
+            </p>
+
+            <p class="compatibilidade">
+    🚗 Consulte a aplicação para o seu veículo
+             </p>
+
+            <p class="disponivel">
+                ● Disponível
+            </p>
+
+            <p class="preco">
+                R$ 13,00
+            </p>
+
+           <button class="btn-detalhes" type="button">
+    Ver detalhes
+          </button>
+
+           <button class="btn-carrinho" type="button">
+    Adicionar ao carrinho
+           </button>
+
+        </div>
+
+
+        <!-- PRODUTO 3 -->
+        <div class="produto">
+
+            <div class="imagem-produto">
+                <img src="imagens/produto3.jpg" alt="Filtro de Ar">
+            </div>
+
+            <h3>Filtro de Ar</h3>
+
+            <p class="descricao-produto">
+    Filtragem eficiente para melhor proteção do motor.
+</p>
+
+<p class="compatibilidade">
+    🚗 Consulte a aplicação para o seu veículo
+</p>
+
+<p class="disponivel">
+    ● Disponível
+</p>
+
+<p class="preco">
+    R$ 15,00
+</p>
+
+<button class="btn-detalhes" type="button">
+    Ver detalhes
+</button>
+
+<button class="btn-carrinho" type="button">
+    Adicionar ao carrinho
+</button>
+        </div>
+        
+
+<!-- PRODUTO 4 -->
+<div class="produto">
+
+    <div class="imagem-produto">
+        <img src="imagens/produto4.jpg" alt="Kit LED Automotivo">
+    </div>
+
+    <h3>Kit LED Automotivo</h3>
+
+    <p class="descricao-produto">
+        Kit de iluminação LED para melhorar a iluminação do veículo.
+    </p>
+
+    <p class="compatibilidade">
+        🚗 Consulte a aplicação para o seu veículo
+    </p>
+
+    <p class="disponivel">
+        ● Disponível
+    </p>
+
+    <p class="preco">
+        R$ 30,00
+    </p>
+
+    <button class="btn-detalhes" type="button">
+        Ver detalhes
+    </button>
+
+    <button class="btn-carrinho" type="button">
+        Adicionar ao carrinho
+    </button>
+
+</div>
+
+    <!-- PRODUTO 5 -->
+<div class="produto">
+
+    <div class="imagem-produto">
+        <img src="imagens/produto5.jpg" alt="Filtro de Combustível">
+    </div>
+
+    <h3>Filtro de Combustível</h3>
+
+    <p class="descricao-produto">
+        Filtragem eficiente para ajudar na proteção do sistema de combustível.
+    </p>
+
+    <p class="compatibilidade">
+        🚗 Consulte a aplicação para o seu veículo
+    </p>
+
+    <p class="disponivel">
+        ● Disponível
+    </p>
+
+    <p class="preco">
+        R$ 10,00
+    </p>
+
+    <button class="btn-detalhes" type="button">
+        Ver detalhes
+    </button>
+
+    <button class="btn-carrinho" type="button">
+        Adicionar ao carrinho
+    </button>
+</div>
+
+   <!-- PRODUTO 6 - OCULTO -->
+<div class="produto produto-oculto">
+
+    <div class="imagem-produto">
+        <img src="imagens/produto6.jpg" alt="Amortecedor">
+    </div>
+
+    <h3>Amortecedor</h3>
+
+    <p class="descricao-produto">
+        Amortecedor para auxiliar na estabilidade e conforto do veículo.
+    </p>
+
+    <p class="compatibilidade">
+        🚗 Consulte a aplicação para o seu veículo
+    </p>
+
+    <p class="disponivel">
+        ● Disponível
+    </p>
+
+    <p class="preco">
+        R$ 130,00
+    </p>
+
+    <button class="btn-detalhes" type="button">
+        Ver detalhes
+    </button>
+
+    <button class="btn-carrinho" type="button">
+        Adicionar ao carrinho
+    </button>
+
+</div>
+
+         </div>
+
+         <div class="consulta-pecas">
+
+    <h3>🔧 Não encontrou a peça que procura?</h3>
+
+    <p>
+        Fale com nossa equipe pelo WhatsApp.
+        Temos diversas peças e podemos consultar a disponibilidade para o seu veículo.
+    </p>
+
+    <a
+        href="https://wa.me/555399310172?text=Ol%C3%A1!%20%F0%9F%91%8B%20Gostaria%20de%20consultar%20outras%20pe%C3%A7as%20dispon%C3%ADveis%20para%20o%20meu%20ve%C3%ADculo."
+        target="_blank"
+        class="btn-consulta-pecas">
+        📲 Consultar outras peças no WhatsApp
+    </a>
+
+</div>
+
+      
+
+</section>
+
+<!-- CARRINHO -->
+
+<section class="carrinho" id="carrinho">
+
+    <h2>Seu carrinho</h2>
+
+    <div id="lista-carrinho">
+        <p>Seu carrinho está vazio.</p>
+    </div>
+
+    <div class="total-carrinho">
+        <strong>Total:</strong>
+        <span id="total-carrinho">R$ 0,00</span>
+    </div>
+
+    <button class="finalizar-carrinho" type="button">
+        💬 Finalizar pedido pelo WhatsApp
+    </button>
+
+</section>
+
+<!-- POR QUE COMPRAR -->
+
+<section class="confianca">
+
+    <h2>Por que comprar na Lenz Auto Peças?</h2>
+
+    <div class="lista-confianca">
+
+        <div class="item-confianca">
+            <span>✅</span>
+            <h3>Produtos selecionados</h3>
+            <p>Peças escolhidas para oferecer qualidade e confiança.</p>
+        </div>
+
+        <div class="item-confianca">
+            <span>🛠️</span>
+            <h3>Atendimento especializado</h3>
+            <p>Conte com nossa equipe para encontrar a peça certa.</p>
+        </div>
+
+        <div class="item-confianca">
+            <span>💬</span>
+            <h3>Pedido fácil pelo WhatsApp</h3>
+            <p>Faça seu pedido de forma rápida e prática.</p>
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- CONTATO -->
+
+<section class="contato" id="contato">
+
+    <div class="contato-conteudo">
+
+        <span class="contato-tag">
+            FALE CONOSCO
+        </span>
+
+        <h2>
+            Precisa de uma peça?
+        </h2>
+
+        <p>
+            Envie uma mensagem para a Lenz Auto Peças.
+            Nossa equipe está pronta para ajudar você a encontrar
+            o produto certo para o seu veículo.
+        </p>
+
+        <a
+            href="https://wa.me/555399310172?text=Olá!%20Quero%20fazer%20um%20pedido%20na%20Lenz%20Auto%20Peças."
+            class="whatsapp"
+            target="_blank">
+            💬 Falar com a Lenz pelo WhatsApp
+        </a>
+
+        <div class="contato-info">
+
+            <div>
+                <strong>Atendimento rápido</strong>
+                <span>Respondemos pelo WhatsApp</span>
+            </div>
+
+            <div>
+                <strong>Orçamento</strong>
+                <span>Consulte disponibilidade e preço</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- RODAPÉ -->
+    
+    <footer>
+    <div class="footer-conteudo">
+        <div class="footer-logo">
+            LENZ <span>AUTO PEÇAS</span>
+        </div>
+
+        <p>
+            Qualidade, confiança e atendimento para cuidar do seu veículo.
+        </p>
+
+        <div class="footer-links">
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Lenz Auto Peças — Todos os direitos reservados.
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
